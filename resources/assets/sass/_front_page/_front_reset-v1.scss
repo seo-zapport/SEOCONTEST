@@ -1,0 +1,418 @@
+.seo-liga{
+	.navbar-seo-default{
+		background: $darker-red;
+		background: -moz-linear-gradient(top, $darker-red 0%, $darker-red 50%, $dark-red 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, $darker-red), color-stop(50%, $darker-red), color-stop(100%, $dark-red));
+		background: -webkit-linear-gradient(top, $darker-red 0%, $darker-red 50%, $dark-red 100%);
+		background: -o-linear-gradient(top, $darker-red 0%, $darker-red 50%, $dark-red 100%);
+		background: -ms-linear-gradient(top, $darker-red 0%, $darker-red 50%, $dark-red 100%);
+		background: linear-gradient(to bottom, $darker-red 0%, $darker-red 50%, $dark-red 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$darker-red', endColorstr='$dark-red', GradientType=0 );
+		border-color: $darker-red;
+		.navbar-nav{
+			position: relative;
+			>li{
+				>a{
+					color: $white;
+					&:hover,&:focus{
+						background-color: $gold;
+					}
+				}
+			}
+			>.active{
+				>a{
+					background-color: $gold;
+					color: $white;
+					&:hover, &:focus{
+						background-color: $gold;
+						color: $white;
+					}
+				}
+			}
+		}
+		.navbar-toggle{
+			border-color: $lighter-yellow;
+			&:hover,&:focus{
+				background-color: $darker-red;
+			}
+			.icon-bar{
+				background-color: $lighter-yellow;
+			}
+		}
+	}
+	.brand-navbar{
+		display: inline-block;
+		min-height: 50px;
+		@include padding( 'multi', '', 15px 15px );
+		font-size: 18px;
+		line-height: 20px;
+	}
+	#timepicker,
+	.panel-form-liga > .panel-seo-heading,
+	.panel-seo.panel-validation > .panel-seo-heading{
+		@include margin( 'multi', '', 15px 0px );
+		.heading-3{
+			font-size: 24px;
+			font-weight: 600;
+			@include margin( 'single', top, 0px );
+		 	background:$light-gold;
+			background: -moz-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%,$light-gold), color-stop(100%, $dark-gold));
+			background: -webkit-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+			background: -o-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+			background: -ms-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+			background: linear-gradient(to bottom,$light-gold 0%, $dark-gold 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-gold', endColorstr='$dark-gold', GradientType=0 );
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			text-transform: uppercase;
+		    position: relative;
+		}
+	}
+	#timepicker{
+		@include margin( 'sinlge', bottom, 40px );
+		@include margin( 'sinlge', top, 40px );
+	}
+	.panel-form-liga > .panel-seo-body .panel-notify{
+		font-size: 24px;
+		font-weight: 600;
+		@include margin( 'single', top, 0px );
+	 	background:$light-gold;
+		background: -moz-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%,$light-gold), color-stop(100%, $dark-gold));
+		background: -webkit-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+		background: -o-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+		background: -ms-linear-gradient(top,$light-gold 0%, $dark-gold 100%);
+		background: linear-gradient(to bottom,$light-gold 0%, $dark-gold 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-gold', endColorstr='$dark-gold', GradientType=0 );
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-transform: uppercase;
+	    position: relative;
+	}
+	.clock-box,
+	.clock-box #participantBox,
+	.panel-seo-ranking .panel-seo-body{
+		background: $dark-gold;
+		background: -moz-linear-gradient(45deg, $dark-gold 0%, $light-gold 45%, $light-gold 65%, $dark-gold 100%);
+		background: -webkit-gradient(left bottom, right top, color-stop(0%, $dark-gold), color-stop(45%, $light-gold), color-stop(65%, $light-gold), color-stop(100%, $dark-gold));
+		background: -webkit-linear-gradient(45deg, $dark-gold 0%, $light-gold 45%, $light-gold 65%, $dark-gold 100%);
+		background: -o-linear-gradient(45deg, $dark-gold 0%, $light-gold 45%, $light-gold 65%, $dark-gold 100%);
+		background: -ms-linear-gradient(45deg, $dark-gold 0%, $light-gold 45%, $light-gold 65%, $dark-gold 100%);
+		background: linear-gradient(45deg, $dark-gold 0%, $light-gold 45%, $light-gold 65%, $dark-gold 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$dark-gold', endColorstr='$dark-gold', GradientType=1 );
+	}
+	.clock-box,
+	.clock-box #participantBox{
+		border-radius: 5px;
+		@include padding( 'multi', '', 5px );
+	}
+	#limitTimePicker, #announcementTimePicker{
+		@include margin( 'multi', '', 0px );
+		background: $black-1;
+		border-radius: 3px;
+		@include padding( 'multi', '', 8px 12px 15px );
+	}
+	.clock-box{
+		.flip-clock-wrapper{
+			@include flexbox;
+			@include flex-wrap(wrap);
+			@include flex( 0 1 auto);
+			@include flex-just(center);
+			@include margin( 'multi', '', 0px );
+
+			ul{
+				font-size: 40px;
+				line-height: 60px;
+				width: 40px;
+				height: 60px;
+				li{
+					line-height: 60px;
+					a{
+						div, div.inn{
+							font-size: 40px;
+							div.inn{
+								background-color: $white-fd;
+								color: $light-gray;
+							}
+						}
+					}
+				}
+			}
+		}
+		.flip-clock-divider{
+			height: 80px;
+			.flip-clock-label{
+			    top: 6.8em;
+			    right: -65px;
+			    color: $white;
+			}
+		}
+		#participantBox{
+		    @include padding( 'multi', '', 10px );
+		    border: 3px solid #f3dfc4;
+		    border-radius: 20px;
+		    overflow: hidden;	
+		}
+	}
+	.flip-clock-dot.top{
+		top: 20px;
+	}
+	#banks{
+		@include padding( 'multi', '', 10px 0 );
+		background: url('../img/front-assets/bank-strip.png') repeat-x;
+		background-size: cover;
+		background-position: center;
+		@include margin( 'single', bottom, 20px );
+		.list-wrap{
+			position: relative;
+			@include flexbox;
+			@include flex-direction(column);
+			@include flex(auto);
+		}
+		.list-group-flex{
+			.list-item-flex{
+				list-style: none;
+				float: left;
+				display: inline;
+			}
+		}
+		.list-icons{
+			background: url('../img/front-assets/banks.png') no-repeat;
+			background-position: -32px -23px;
+			display: block;
+			height: 55px;
+			margin: auto;
+			width: 180px;
+			&.bank-bni{
+				background-position: -32px -23px;
+				width: 152px;
+			}
+			&.bank-bri{background-position: -280px -23px;}
+			&.bank-danamon{background-position: -535px -23px;}
+			&.bank-mandiri{
+				background-position: -795px -23px;}
+			&.bank-bca{
+				background-position: -1065px -23px;
+				width: 160px;
+			}
+		}
+	}
+	#contentArea,
+	#formRegistration{
+		@include padding( 'multi', '', 19px 0 );
+		@include margin( 'single', bottom, 15px );
+	}
+	#contentArea{
+		.heading-1{
+		    font-size: 30px;
+		    font-weight: 600;
+		    margin-top: 5px;
+		    text-align: center;
+		    text-transform: uppercase;
+		}
+		.clock-box{
+			@include padding( 'multi', '', 0 );
+		    text-align: center;
+		    border-radius: 18px;
+		    position: relative;
+		}		
+		#increment{
+		    background: #141311;
+		    padding: 10px;
+		    border-radius: 25px;
+		    border: 3px solid #a1957d;	
+		}
+		.text-area{
+		    margin: 0;
+		    font-size: 24px;
+		    line-height: 1.3;
+		}
+		.panel-seo{
+			@include padding( 'single', left, 0 );
+			@include padding( 'single', right, 0 );
+			.panel-seo-heading{
+			    border-top-left-radius: 0px;
+			    border-top-right-radius: 0px;
+			}
+		}
+		.flip-clock-wrapper{
+			ul{
+				font-size: 65px;
+				line-height: 75px;
+				width: 45px;
+				height: 75px;
+				li{
+					line-height: 75px;
+					a div,
+					div.inn{
+						font-size: 65px;
+					}
+				}
+			}
+		}
+	}
+	#formRegistration{
+		.panel-form-liga {
+			> .panel-seo-heading{
+				@include margin( 'multi', '', 0px );
+			}
+			.has-error input{
+				border-color: $fbd776;
+			}
+			.text-danger{
+				color: $fbd776;
+			}
+		}
+	}
+	.panel-seo{
+		background-color: transparent;
+		border: 1px solid transparent;
+		@include margin( 'single', bottom, 20px );
+		>.panel-seo-heading{
+			background-color: $dark-red;
+			@include padding( 'multi', '', 10px 15px );
+		    border-bottom: 1px solid transparent;	
+		}
+		&.panel-validation{
+			>.panel-seo-heading{
+			    background-color: $black-4c;
+			    border-top-left-radius: 4px;
+			    border-top-right-radius: 4px;
+				@include margin( 'multi', '', 0px );
+			    >.heading-3{
+				    font-size: 19px;
+				    @include margin( 'multi', '', 0px );
+			    }
+			}			
+			>.panel-seo-body{
+			    background: $gray-5;
+			    border-bottom-left-radius: 4px;
+			    border-bottom-right-radius: 4px;
+			}
+		}
+	}
+	.panel-liga{
+		.panel-seo-heading{
+			@include padding( 'multi', '', 10px 15px );
+		    padding: 10px 15px;
+		    border-bottom: 1px solid transparent;
+		    >.text-title{
+		    	@include margin( 'multi', '', 0px );
+		    	color:$white;
+		    }
+		}
+	}
+	.panel-seo-ranking{
+		>.panel-seo-body{
+		    color: $black-4;
+			@include padding( 'single', '', 25px );
+		}
+		>.panel-seo-heading{
+			@include padding( 'single', left, 15px );
+			@include padding( 'single', right, 15px );
+			>.panel-title{
+				font-size: 36px;
+			    font-weight: 600;
+			}
+		}
+		>.panel-seo-body > p{
+		    font-size: 19px;
+			margin-bottom: 0px;
+		    line-height: 1.4;
+		}
+	}
+	.panel-seo-heading{
+	    border-top-left-radius: 45px;
+	    border-top-right-radius: 45px;
+	}
+	.panel-seo-body{
+	    font-size: 16px;
+	    border-bottom-left-radius: 45px;
+	    border-bottom-right-radius: 45px;
+		@include padding( 'multi', '', 15px );
+	}
+	.panel-form-liga{
+		border-radius: 20px;
+	    -webkit-box-shadow: 0 1px 1px $opa-5;
+	    box-shadow: 0 1px 1px  $opa-5;	
+		&.panel-liga-input{
+			input[type='text'],
+			input[type='email'],
+			input[type='number'],
+			select.form-control{
+				background: #abaaa8;
+			    border-color: $gray-2;
+			    border-width: 2px;
+			    box-shadow:  $gray-2 0px 0px 2px 0px inset;
+			    color: $white;
+			}
+			input[type='text'],
+			input[type='email'],
+			input[type='number']{
+				&::-webkit-input-placeholder{
+					color: $white !important;
+				}
+				&::-moz-placeholder{
+					color: $white !important;
+				}
+				&::-ms-input-placeholder{
+					color: $white !important;
+				}
+				&::-moz-placeholder{
+					color: $white !important;
+				}
+			}
+			
+		}
+		>.panel-seo-heading{
+		    background-color: $opa-8;
+		    border: 2px solid $gray-3;
+		    border-bottom: 1px solid transparent;
+		    position: relative;
+		    border-bottom-color: transparent;
+	    	>.panel-title,
+	    	>.heading-3{
+			    font-size: 36px;
+			    font-weight: 600;
+	    	}
+	    	>.heading-3{
+				@include padding( 'multi', '', 5px 0px );
+	    	}
+		}
+		>.panel-seo-body{
+		    border: 2px solid;
+		    border-top: 0;
+			background: $black-3;
+			background: -moz-linear-gradient(-45deg, $black-3 17%, $gray-4 38%, $gray-4 38%, $black-5 65%);
+			background: -webkit-linear-gradient(-45deg, $black-3 17%,$gray-4 38%,$gray-4 38%,$black-5 65%);
+			background: linear-gradient(168deg, $black-3 17%,$gray-4 38%,$gray-4 38%,$black-5 65%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$black-3', endColorstr='$black-5',GradientType=1 );
+		}
+	}
+	.btn-validation{
+		background: $light-green-b;
+		background: -moz-linear-gradient(top, $light-green-b 0%, $green 50%, $green 75%, $light-green-ae 100%);
+		background: -webkit-linear-gradient(top, $light-green-b 0%,$green 50%,$green 75%,$light-green-ae 100%);
+		background: linear-gradient(to bottom, $light-green-b 0%,$green 50%,$green 75%,$light-green-ae 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green-b', endColorstr='$light-green-ae',GradientType=0 );
+		border-color: $dark-green;
+		&:active,&:hover,&:focus{
+			background: $green;
+			background: -moz-linear-gradient(top, $green 1%, $light-green-b 52%, $light-green-ae 100%);
+			background: -webkit-linear-gradient(top, $green 1%,$light-green-b 52%,$light-green-ae 100%);
+			background: linear-gradient(to bottom, $green 1%,$light-green-b 52%,$light-green-ae 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$green', endColorstr='$light-green-ae',GradientType=0 );
+		}
+	}
+	.seo-link{
+		border-radius: 10px;
+		box-shadow: 2px 3px 10px $opa-2;
+		margin-top: 25px;
+	}
+	.footer-socket,
+	.footer-copyright{
+		border-top:1px solid $gold;
+		padding: 15px 0;
+	}
+}

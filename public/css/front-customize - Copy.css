@@ -1,0 +1,40 @@
+body.seo-liga{
+		background-color: #1a150f !important;
+		font-family: noto-sans;
+}
+.seo-liga .panel-seo-body,
+.seo-liga .panel-seo-ranking > .panel-seo-body{
+	font-size: 14px;
+}
+.seo-liga .panel-seo-ranking > .panel-seo-heading > .panel-title,
+body .modal-header, body .banner-heading, body .thead-liga{
+	color: #f1f1f1;
+	font-size: 22px;
+}
+
+.seo-liga .panel-seo-ranking > .panel-seo-body{
+	color: #272727;
+}
+.seo-liga .navbar-seo-default{
+	background: #6c0106;
+	border-color: #6c0106;
+}
+.seo-liga .navbar-seo-default .navbar-nav > li > a,
+.seo-liga .footer-socket .navbar-nav > li > a{
+	color: #ffffff;
+}
+.seo-liga .navbar-seo-default .navbar-nav > li > a:hover,
+.seo-liga .navbar-seo-default .navbar-nav > li > a:focus,
+.seo-admin-secondary .dropdown.open a{
+	background-color: #b88d3f;
+}
+.seo-liga .navbar-seo-default .navbar-toggle:hover,
+.seo-liga .navbar-seo-default .navbar-toggle:focus{
+	background-color: #6c0106;
+}
+.seo-liga .navbar-seo-default .navbar-toggle{
+	border-color: #ffffff;
+}
+.seo-liga .navbar-seo-default .navbar-toggle .icon-bar{
+	background-color: black;
+}

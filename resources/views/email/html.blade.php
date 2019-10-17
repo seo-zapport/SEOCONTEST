@@ -1,0 +1,1 @@
+<b>{!! $bodymessage !!}</b>

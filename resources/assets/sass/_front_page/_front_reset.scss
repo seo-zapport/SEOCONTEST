@@ -1,0 +1,69 @@
+.m-r{ @include margin('multi', '', 0px);}
+.m-t{ @include margin('single', 'top', 25px);}
+.m-b{ @include margin('single', 'bottom', 25px);}
+
+.m-t-md{ @include margin('single', 'top', 50px);}
+.m-b-md{ @include margin('single', 'bottom', 50px);}
+
+.m-t-lg{ @include margin('single', 'top', 75px);}
+.m-b-lg{ @include margin('single', 'bottom', 75px);}
+
+.p-reset{ @include padding('multi', '', 25px);}
+.p-l{ @include padding('single', 'left', 25px);}
+.p-r{ @include padding('single', 'right', 25px);}
+.p-t{ @include padding('single', 'top', 25px);}
+.p-b{ @include padding('single', 'bottom', 25px);}
+
+/*color*/
+.db-bg{ background-color: $fun-b-trans-7; }
+
+/*radius*/
+.b-r{ border-radius: 0 !important;}
+
+/*Shadows*/
+.fun-shdows{
+	color: $fun-red-ca;
+	font-size: 28px;
+	font-weight: 900;
+	@include margin( 'single', bottom, 15px);
+	@include margin( 'single', top, 5px);
+	position: relative;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 4px #e7c46d;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 2px #e7c46d;
+	line-height: 1.1;
+    &[data-text]{
+	    &:after{
+	    	position: absolute;
+	    	content: attr(data-text);
+	    	display: block;
+	    	width: 100%;
+	    	height: 100%;
+	    	top:0;
+	    	text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1), 5px 5px 7px rgba(0, 0, 0, 0.5);
+	    }	
+    }
+}
+/*Inputs*/
+.bg-input{
+	background: $fun-light-g; /* Old browsers */
+	background: -moz-linear-gradient(top, $fun-light-g 0%, $fun-gold-1 49%, $fun-dark-g 56%, $fun-gold-1 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $fun-light-g 0%,$fun-gold-1 49%,$fun-dark-g 56%,$fun-gold-1 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $fun-light-g 0%,$fun-gold-1 49%,$fun-dark-g 56%,$fun-gold-1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$fun-light-g', endColorstr='$fun-gold-1',GradientType=0 ); /* IE6-9 */
+    overflow: hidden;
+    position: relative;
+    @include padding( 'multi', '', 3px );
+    border-radius: 10px;
+	input,
+	select,
+	input.form-control,
+	select.form-control{
+		border-radius: 9px;
+		background-color: $fun-light-gray-e;
+		border-color: $fun-light-gray-b;
+	    -webkit-box-shadow: inset 0 1px 2px $fun-b-trans-3;
+	    box-shadow: inset 0 1px 2px $fun-b-trans-3;
+	}
+}

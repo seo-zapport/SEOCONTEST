@@ -1,0 +1,34 @@
+.theme-settings{
+    .tabs-container{
+        .tabs-left {
+            > .nav-tabs{
+                background: #efefef;
+                height: 100%;
+                position: absolute;
+            }
+            .panel-body{
+                min-height: 500px;
+
+                //Theme Elements
+                .form-check{
+                    display: inline-block;
+                    @include margin('', right, 10px);
+                }
+            }
+        }
+    }
+    .ibox-content{
+        padding: 0;
+        position: relative;
+        min-height: 500px;
+    }
+}
+.ibox-content{
+    position: relative;
+}
+.icons-stats{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0.5;     
+}
