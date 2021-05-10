@@ -23,7 +23,7 @@
     "jshint": "^2.9.5",
     "laravel-elixir": "^6.0.0-16",
     "laravel-mix": "^1.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "vue": "^2.1.10"
   },
   "name": "www.sandbox.seocontest.com",
